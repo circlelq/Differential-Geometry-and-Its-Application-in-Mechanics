@@ -1,5 +1,5 @@
 \documentclass[a4,12pt]{ctexart}
-\input{/Users/circle/Documents/GitHub/latex-template/setting.tex}
+\input{../setting.tex}
 \setcounter{secnumdepth}{2}
 \setlength{\parindent}{2em}
 % \graphicspath{{fig/}}
@@ -26,6 +26,38 @@
 
 \section{1}
 
+试证 $\det (g_{ij}) \neq  0$.
+
+If $\det (g_{ij}) = 0$, then the columns are linearly correlation. Assuming
+\begin{equation}
+   \alpha^j \bm{e}_i \cdot \bm{e}_j =   \bm{e}_i \cdot (\alpha^j \bm{e}_j) = 0,
+\end{equation}
+then we have
+\begin{equation}
+   (\alpha^i \bm{e}_i) \cdot (\alpha^j \bm{e}_j) = 0,
+\end{equation}
+\begin{equation}
+   \alpha^i \bm{e}_i = 0,
+\end{equation}
+which contradicts the assumption of $\bm{e}_i $ is linear independent.\qed
+
+
+\section{2}
+求坐标变换下$g_{ij}$和$g^{ij}$的变换规律.
+
+Suppose the coordinate transformation is
+\begin{equation}
+   \widetilde{\bm{e}}_{i'} = \alpha_{i'}^{j} \bm{e}_j.
+\end{equation}
+According to the definition of $g_{ij}$,
+\begin{equation}
+   g_{ij} = \bm{e}_i \cdot \bm{e}_j, \quad  \widetilde{g}_{i'j'} = \widetilde{\bm{e}}_{i'} \cdot \widetilde{\bm{e}}_{j'} = \alpha_{i'}^{i} \bm{e}_i \cdot \alpha_{j'}^{j} \bm{e}_j =   \alpha_{i'}^{i}  \alpha_{j'}^{j} g_{ij}.
+\end{equation}
+
+
+\section{3}
+
+在三维欧式空间中给定基底$\{\bm{e}_i\}$,用通常向量运算方式给出其对偶基底。
 
 
 
